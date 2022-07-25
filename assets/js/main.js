@@ -18,7 +18,7 @@ const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction() {
     const navMenu = document.getElementById('nav-menu')
-        // When we click on each nav__link, we remove the show-menu class
+    // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
@@ -77,7 +77,7 @@ themeButton.addEventListener('click', () => {
     // Add or remove the dark / icon theme
     document.body.classList.toggle(darkTheme)
     themeButton.classList.toggle(iconTheme)
-        // We save the theme and the current icon that the user chose
+    // We save the theme and the current icon that the user chose
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
@@ -100,11 +100,11 @@ let resumeButton = document.getElementById('resume-button')
 
 // Html2pdf options
 let opt = {
-    margin: 1,
+    margin: 0.5,
     filename: 'Juan Angel Ordoñez Guzman CV.pdf',
     image: { type: 'jpeg', quality: 0.98 },
     html2canvas: { scale: 4 },
-    jsPDF: { format: 'a4', orientation: 'portrait' }
+    jsPDF: { format: 'legal', orientation: 'portrait' }
 }
 
 // Function to call areaCv and Html2Pdf options 
