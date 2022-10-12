@@ -250,7 +250,7 @@ img {
 
 .bd-container {
     max-width: 968px;
-    width: calc(100%-3rem);
+    width: calc(100% - 3rem);
     margin-left: var(--mb-3);
     margin-right: var(--mb-3);
 }
@@ -365,8 +365,8 @@ img {
 }
 
 .home__img {
-    width: 180px;
-    height: 180px;
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
     justify-self: center;
     margin-bottom: var(--mb-1);
@@ -440,7 +440,7 @@ img {
 /*========== PROFILE ==========*/
 
 .profile__description {
-    text-align: center;
+    text-align: justify-all;
 }
 
 
@@ -496,6 +496,9 @@ img {
     font-size: var(--smaller-font-size);
 }
 
+.experience__description {
+    text-align: justify;
+}
 
 /*========== SKILLS AND LANGUAGES ==========*/
 
@@ -560,13 +563,13 @@ img {
 /*========== INTERESTS ==========*/
 
 .interests__container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: none;
     margin-top: var(--mb-2);
 }
 
 .interests__content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -624,47 +627,59 @@ img {
     body {
         margin: 3rem 0;
     }
+
     .bd-container {
         margin-left: auto;
         margin-right: auto;
     }
+
     .l-header,
     .scrolltop {
         display: none;
     }
+
     .resume {
         display: grid;
         grid-template-columns: .5fr 1fr;
         background-color: var(--container-color);
         box-shadow: 0 0 8px rgba(13, 12, 12, .15);
     }
+
     .resume__left {
         background-color: var(--container-color-alt);
     }
+
     .resume__left,
     .resume__right {
         padding: 0 1.5rem;
     }
+
     .generate-pdf {
         display: inline-block;
     }
+
     .section-title,
     .profile__description {
-        text-align: initial;
+        text-align: justify;
     }
+
     .home__container {
         gap: 1.5rem;
     }
+
     .home__button-movil {
         display: none;
     }
+
     .references__container {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .languages__content {
         grid-template-columns: repeat(3, max-content);
         column-gap: 3.5rem;
     }
+
     .interests__container {
         grid-template-columns: repeat(4, max-content);
         column-gap: 3.5rem;

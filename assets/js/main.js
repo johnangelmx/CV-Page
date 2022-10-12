@@ -103,8 +103,8 @@ let opt = {
     margin: 0.5,
     filename: 'Juan Angel Ordoñez Guzman CV.pdf',
     image: { type: 'jpeg', quality: 0.98 },
-    html2canvas: { scale: 4 },
-    jsPDF: { format: 'legal', orientation: 'portrait' }
+    html2canvas: { scale: 1 },
+    jsPDF: { format: 'Legal', orientation: 'portrait' }
 }
 
 // Function to call areaCv and Html2Pdf options 
